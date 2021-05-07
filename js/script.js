@@ -43,7 +43,7 @@
             <li class="taskList__item">
             <button class="taskList__button taskList__button--done js-done">${task.done ? "&#10004" : ""}
             </button>
-            <span class="taskList__span${task.done ? " taskList__item--done" : ""}">${task.content}
+            <span class="taskList__span${task.done ? " taskList__span--done" : ""}">${task.content}
             </span> 
             <button class="taskList__button taskList__button--remove js-remove">&#10006
             </button>
