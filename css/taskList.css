@@ -20,6 +20,10 @@
     overflow-wrap: break-word;
 }
 
+.taskList__span--done {
+    text-decoration: line-through;
+}
+
 .taskList__button {
     border: none;
     margin: 0 auto;
@@ -27,6 +31,7 @@
     width: 35px;
     height: 35px;
     color: white;
+    cursor: pointer;
 }
 
 .taskList__button--done {
@@ -43,8 +48,4 @@
 
 .taskList__button--remove:hover {
     background-color: rgba(240, 36, 36, 0.7);
-}
-
-.taskList__item--done {
-    text-decoration: line-through;
 }

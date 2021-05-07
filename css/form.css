@@ -25,6 +25,7 @@
     padding: 10px;
     color: white;
     background-color: teal;
+    cursor:pointer;
 }
 
 .form__inputButton:hover {
