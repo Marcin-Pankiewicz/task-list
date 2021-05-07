@@ -5,3 +5,13 @@ html {
 *, ::after, ::before {
     box-sizing: inherit;
 }
+
+body {
+    background: lightgrey;
+    color: #242d35;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+

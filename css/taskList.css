@@ -1,0 +1,50 @@
+.taskList {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
+    max-width: 900px;
+}
+
+.taskList__item {
+    display: grid;
+    grid-template-columns: 40px 90% 40px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+.taskList__span {
+    overflow-wrap: break-word;
+}
+
+.taskList__button {
+    border: none;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    color: white;
+}
+
+.taskList__button--done {
+    background-color: rgb(22, 173, 22);
+}
+
+.taskList__button--done:hover {
+    background-color: rgba(22, 173, 22, 0.7);
+}
+
+.taskList__button--remove {
+    background-color: rgb(240, 36, 36);
+}
+
+.taskList__button--remove:hover {
+    background-color: rgba(240, 36, 36, 0.7);
+}
+
+.taskList__item--done {
+    text-decoration: line-through;
+}
