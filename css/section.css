@@ -1,11 +1,10 @@
 .section {
     margin: 0 auto 10px;
-    width: 95%;
 }
 
 .section__header {
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid #e1e1e1;
 }
