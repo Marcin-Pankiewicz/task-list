@@ -16,6 +16,15 @@
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
     }
+
+    const eraseInputField = () => {
+        document.querySelector(".js-newTask").value = "";
+    }
+
+    const focusInputField = () => {
+        document.querySelector(".js-newTask").focus();
+    }
+
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -35,6 +44,7 @@
 
         });
     }
+
     const render = () => {
         let htmlString = "";
 
@@ -45,7 +55,7 @@
             </button>
             <span class="taskList__span${task.done ? " taskList__span--done" : ""}">${task.content}
             </span> 
-            <button class="taskList__button taskList__button--remove js-remove">&#10006
+            <button class="taskList__button taskList__button--remove js-remove">&#128465
             </button>
             </li>
             `;
@@ -53,29 +63,26 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
         bindEvents();
+        eraseInputField();
 
     };
-    const clearInput = (newTask) => {
-        newTask.value = "";
-        newTask.focus();
-    }
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        const newTask = document.querySelector(".js-newTask");
-        const newTaskContent = newTask.value.trim();
+        const newTaskContent = document.querySelector(".js-newTask").value.trim();
         if (newTaskContent === "") {
-            clearInput();
+            focusInputField();
             return;
         }
         addNewTask(newTaskContent);
-        clearInput(newTask);
+
     };
 
     const init = () => {
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onFormSubmit);
         render();
+        focusInputField();
     };
 
     init();
