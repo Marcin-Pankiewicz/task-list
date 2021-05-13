@@ -9,8 +9,8 @@ html {
 body {
     max-width: 900px;
     margin: 0 auto;
-    background: lightgrey;
-    color: #242d35;
+    background: #eee;
+    color: black;
     font-family: "Montserrat", sans-serif;
 }
 
