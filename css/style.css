@@ -7,13 +7,6 @@ html {
 }
 
 body {
-    max-width: 900px;
-    margin: 0 auto;
     background: #eee;
-    color: black;
     font-family: "Montserrat", sans-serif;
 }
-
-
-
-
