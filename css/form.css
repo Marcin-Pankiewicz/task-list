@@ -1,34 +1,32 @@
 .form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 0 auto;
-    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
 }
 
 @media(max-width: 767px) {
     .form {
-        display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 10px;
     }
 }
 
 .form__input {
-    flex-basis: 80%;
-    border: 1px solid #eee;
     padding: 10px;
+    border: 1px solid #ddd;
 }
 
 .form__inputButton {
-    border: 0;
+    border: none;
     padding: 10px;
     color: white;
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     cursor: pointer;
 }
 
 .form__inputButton:hover {
-    background-color: rgba(0, 128, 128, 0.85);
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__inputButton:active {
+    background-color: hsl(180, 100%, 35%);
 }
