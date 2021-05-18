@@ -1,21 +1,19 @@
 .taskList {
-    min-height: 50px;
     list-style-type: none;
-    padding: 15px;
-    margin: 0 auto;
-    background-color: white;
+    padding: 0;
+    margin: 0;
 }
 
 .taskList__item {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
     align-items: center;
     padding: 10px;
-    border-bottom: 2px solid #e1e1e1;
+    border-bottom: 1px solid #ddd;
 }
 
 .taskList__span {
-    flex-basis: 90%;
-    padding: 5px;
     word-break: break-all;
 }
 
@@ -25,27 +23,33 @@
 
 .taskList__button {
     border: none;
-    margin: 0 auto;
+    padding: 0;
     width: 30px;
     height: 30px;
     color: white;
     cursor: pointer;
 }
 
-.taskList__button--done {
-    background-color: green;
+.taskList__button--toggleDone {
+    background: hsl(120, 61%, 34%);
 }
 
-.taskList__button--done:active {
-    border: 1px solid black;
-    border-radius: 2px;
+.taskList__button--toggleDone:hover {
+    background: hsl(120, 61%, 39%);
+}
+
+.taskList__button--toggleDone:hover {
+    background: hsl(120, 61%, 44%);
 }
 
 .taskList__button--remove {
-    background-color: crimson;
+    background-color: hsl(348, 83%, 47%);
+}
+
+.taskList__button--remove:hover {
+    background-color: hsl(348, 83%, 52%);
 }
 
 .taskList__button--remove:active {
-    border: 1px solid black;
-    border-radius: 1px;
+    background-color: hsl(348, 83%, 57%);
 }
