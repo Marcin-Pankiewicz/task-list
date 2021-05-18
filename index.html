@@ -10,8 +10,7 @@
         crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
-    <link href="css/taskList.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
+    <link href="css/taskList.css" rel="stylesheet"> 
     <link href="css/section.css" rel="stylesheet">
     <link href="css/container.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
@@ -22,24 +21,26 @@
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
         <header class="header">
             <h1>Lista zadań</h1>
         </header>
-        <main>
-            <section class="section">
-                <h3 class="section__header">Dodaj nowe zadanie</h2>
+        <section class="section">
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <div class="section__body">
                 <form class="form js-form">
                     <input class="form__input js-newTask" placeholder="Co jest do zrobienia ?">
                     <button class="form__inputButton">Dodaj zadanie</button>
                 </form>
-            </section>
-            <section class="section">
-                <h3 class="section__header">Lista zadań</h2>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__header">Lista zadań</h2>
+            <div class="section__body">
                 <ul class="taskList js-tasks"></ul>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
 
 
 </body>
