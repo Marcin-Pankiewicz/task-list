@@ -28,6 +28,7 @@
     height: 30px;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .taskList__button--toggleDone {
@@ -43,13 +44,40 @@
 }
 
 .taskList__button--remove {
-    background-color: hsl(348, 83%, 47%);
+    background-color: hsl(348, 83%, 45%);
 }
 
 .taskList__button--remove:hover {
-    background-color: hsl(348, 83%, 52%);
+    background-color: hsl(348, 83%, 60%);
 }
 
 .taskList__button--remove:active {
-    background-color: hsl(348, 83%, 57%);
+    background-color: hsl(348, 83%, 70%);
+}
+
+.taskList__optionButton {
+    font-size: medium;
+    border: none;
+    color: teal;
+    background: white;
+    cursor: pointer;
+}
+
+@media(max-width: 767px) {
+    .taskList__optionButton {
+        padding: 10px;
+    }
+}
+
+.taskList__optionButton:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.taskList__item--hidden {
+    display: none;
+}
+
+.taskList__optionButton--disabled:disabled {
+    color: #ddd;
+    cursor:default;
 }
