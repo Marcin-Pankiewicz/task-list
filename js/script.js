@@ -35,13 +35,7 @@
         render();
     };
 
-    const eraseInputField = () => {
-        document.querySelector(".js-newTask").value = "";
-    };
 
-    const focusInputField = () => {
-        document.querySelector(".js-newTask").focus();
-    };
 
     const toggleAllTaskHidden = () => {
         hideDoneTasks = !hideDoneTasks;
@@ -54,6 +48,19 @@
             ...tasks.slice(taskIndex, 0),
         ];
         render();
+    };
+
+    const removeAllDoneTasks = () => {
+        //Tu będzie kod :) 
+
+    };
+
+    const eraseInputField = () => {
+        document.querySelector(".js-newTask").value = "";
+    };
+
+    const focusInputField = () => {
+        document.querySelector(".js-newTask").focus();
     };
 
     const bindButtonsEvents = () => {
@@ -72,6 +79,11 @@
         const removeAllTaskButton = document.querySelector(".js-removeAllTaskButton");
         if (removeAllTaskButton) {
             removeAllTaskButton.addEventListener("click", removeAllTasks);
+        };
+
+        const removeAllDoneTaskButton = document.querySelector(".js-removeAllDoneTaskButton");
+        if (removeAllDoneTaskButton) {
+            removeAllDoneTaskButton.addEventListener("click", removeAllDoneTasks());
         };
     };
 
@@ -130,6 +142,9 @@
         </button>
         <button class="taskList__optionButton js-removeAllTaskButton">
         Usuń wszystkie
+        </button>
+        <button class="taskList__optionButton js-removeAllDoneTaskButton">
+        Usuń wszystkie ukończone
         </button>`
 
         };
