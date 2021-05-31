@@ -21,12 +21,14 @@
     color: white;
     background-color: hsl(180, 100%, 25%);
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .form__inputButton:hover {
-    background-color: hsl(180, 100%, 30%);
+    background: hsl(180, 100%, 30%);
+    transform: scale(1.1);
 }
 
 .form__inputButton:active {
-    background-color: hsl(180, 100%, 35%);
+    background: hsl(180, 100%, 35%);
 }
